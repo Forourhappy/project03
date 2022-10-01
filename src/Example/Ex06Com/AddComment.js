@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
 
 
-const comment = (event) => {
-  
-  
-}
+
 const AddComment = () => {
   const [comment, setComment] = useState('');
+  const [comList, setComList] = useState([]);
   return (
     <div>
       <input type='text'></input>
