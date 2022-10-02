@@ -1,8 +1,13 @@
 import React from 'react';
 
-const CommentList = () => {
+const CommentList = (props) => {
+
+
   return (
-    <div>CommentList</div>
+    <div>
+      <span className='comment'>{props.item}</span>{'\u00A0'}
+      <span className='date'>{props.date}</span>
+    </div>
   )
 }
 

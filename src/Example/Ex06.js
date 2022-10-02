@@ -1,6 +1,5 @@
 import React from 'react';
 import AddComment from './Ex06Com/AddComment';
-import CommentList from './Ex06Com/CommentList';
 
 const Ex06 = () => {
 
@@ -30,7 +29,6 @@ const Ex06 = () => {
     <div>
       <h2>Leave your comment!</h2>
       <AddComment/>
-      <CommentList/>
       
     </div>
   )
