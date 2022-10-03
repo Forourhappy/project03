@@ -23,12 +23,13 @@ const AddComment = () => {
       setComment('');
     }
   }
-
+  // 엔터 입력하면 저장
   const enter = (e) => {
     if(e.key === 'Enter')
       post();
   }
 
+  // 댓글 컴포넌트 생성
   const createComment = commentList.slice().reverse().map((i, idx) => (
     <CommentList item={i.comm} key={idx} date={i.date}/>
   ));
@@ -39,7 +40,9 @@ const AddComment = () => {
       onChange={inputComm}
       onKeyPress={enter}
       value={comment}
+      className='textBox'
       />
+      {'\u00A0'}
       <button onClick={post} className='button'>+</button>
       {createComment}
     </div>
